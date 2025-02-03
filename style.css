@@ -1,0 +1,58 @@
+:root{
+    --orange: 231, 119, 40;
+    --areia: 237, 178, 48;
+    --yellow: 248, 197, 55;
+    --light_areia: 255, 209, 81;
+    --rosinha: 255, 221, 161;
+}
+
+body{
+    background-color: rgb(var(--rosinha));
+    font-family: Arial, sans-serif;
+    color: rgb(var(--areia));
+}
+img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.shrink-close-icon {
+    display: flex;               
+    align-items: center;        
+    cursor: pointer;            
+}
+
+.box-shrink {
+    border: 2px solid;           
+    margin-right: 10px;          
+    padding: 5px;                 
+}
+
+.box-close {
+    border: 2px solid;
+    margin-left: 10px;           
+    padding: 5px;
+}
+
+.header-container{
+    background-color: rgb(var(--rosinha));
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.start-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(var(--areia));
+    background-image: url("https://img.freepik.com/vetores-premium/nuvens-sem-costura-de-fundo_738121-843.jpg");
+}
+.start-btn{
+    width: 150px;
+    background-color: rgb(var(--rosinha));
+    color: black;
+    border: solid rgb(var(--areia));
+    padding: 10px 20px;
+    cursor: pointer;
+}
