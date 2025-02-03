@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="support.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>CookTimer</title>
 </head>
 <body>
@@ -15,15 +19,19 @@
                     <img src="assets/shirnk.png"/>
                 </div>
                 <div class="box-shrink">
-                    <img src="assets/close-icon-13612.png"/>
+                    <a onclick="fecharPagina()">
+                        <img src="assets/close-icon-13612.png"/>
+                    </a>
                 </div>
             </div>
         </div>
   </header>
   <main>
     <div class="start-container">
-        <h2>Let's cook something</h2>
-        <button class="start-btn">Start</button>
+        <h2>Let's cook <br/>something</h2>
+        <a href="menuPage.html">
+            <button class="start-btn">Start</button>
+        </a>
     </div>
   </main>
 </body>
