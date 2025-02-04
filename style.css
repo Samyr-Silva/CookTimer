@@ -3,9 +3,9 @@ a {
     text-decoration: none;
 }
 body{
-    background-color: rgb(var(--rosinha));
+    background-color: rgb(var(--orange));
     font-family: "Poppins" sans-serif;
-    color: rgb(var(--areia));
+    color: rgb(var(--rosinha));
 }
 img{
     width: 30px;
@@ -19,19 +19,19 @@ img{
 }
 
 .box-shrink {
-    border: 2px solid;           
+    border: 3px solid;           
     margin-right: 10px;          
     padding: 5px;                 
 }
 
 .box-close {
-    border: 2px solid;
+    border: 3px solid;
     margin-left: 10px;           
     padding: 5px;
 }
 
 .header-container{
-    background-color: rgb(var(--rosinha));
+    background-color: rgb(var(--orange));
     display: flex;
     justify-content: space-between;
 
@@ -45,9 +45,11 @@ img{
     align-items: center;
     justify-content: center;
     justify-items: space-between;
-    border: solid rgb(var(--areia));
+    border: solid rgb(var(--light_areia));
     background-image: url("https://img.freepik.com/vetores-premium/nuvens-sem-costura-de-fundo_738121-843.jpg");
     border-radius: 10px;
+    width: 100%; /* Ocupa toda a largura */
+    min-height: 80vh;
 }
 .start-container h2{
     font-size: 30px;
@@ -57,14 +59,14 @@ img{
     margin-bottom: 40px;
 }
 .start-container button:hover{
-    background-color: rgb(var(--light_areia));
+    background-color: rgb(var(--rosinha));
     transition: background-color 0.3s ease-in-out;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     
 }
 .start-btn{
     width: 250px;
-    background-color: rgb(var(--rosinha));
+    background-color: rgb(var(--areia));
     color: black;
     align-items: center;
     justify-content: center;

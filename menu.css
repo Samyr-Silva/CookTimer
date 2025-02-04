@@ -1,9 +1,9 @@
 @import url("colors.css");
 
 body{
-    background-color: rgb(var(--rosinha));
+    background-color: rgb(var(--orange));
     font-family: "Poppins" sans-serif;
-    color: rgb(var(--areia));
+    color: rgb(var(--rosinha));
 }
 img{
     width: 30px;
@@ -17,19 +17,19 @@ img{
 }
 
 .box-shrink {
-    border: 2px solid;           
+    border: 3px solid;           
     margin-right: 10px;          
     padding: 5px;                 
 }
 
 .box-close {
-    border: 2px solid;
+    border: 3px solid;
     margin-left: 10px;           
     padding: 5px;
 }
 
 .header-container{
-    background-color: rgb(var(--rosinha));
+    background-color: rgb(var(--orange));
     display: flex;
     justify-content: space-between;
 
@@ -37,14 +37,15 @@ img{
 .start-container{
     display: flex;
     flex-direction: column;
+    color: black;
     align-items: center;
     justify-content: center;
-    border: solid rgb(var(--areia));
+    justify-items: space-between;
+    border: solid rgb(var(--light_areia));
     background-image: url("https://img.freepik.com/vetores-premium/nuvens-sem-costura-de-fundo_738121-843.jpg");
     border-radius: 10px;
     width: 100%; /* Ocupa toda a largura */
     min-height: 80vh; 
-    color: black
 }
 
 .start-container h3 {
@@ -53,25 +54,6 @@ img{
     margin-bottom: 100px; /* Espaço entre o título e os ícones */
 }
 
-.start-container button:hover{
-    background-color: rgb(var(--light_areia));
-    transition: background-color 0.3s ease-in-out;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-    
-}
-
-.start-btn{
-    width: 250px;
-    background-color: rgb(var(--rosinha));
-    color: black;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 190px;
-    border-radius: 10px;
-    border: solid rgb(var(--areia));
-    padding: 10px 20px;
-    cursor: pointer;
-}
 .icons-container {
     display: flex;
     gap: 20px; /* Espaçamento entre os ícones */
@@ -84,6 +66,10 @@ img{
     text-align: center;
     text-decoration: none;
 
+}
+.icon:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2);
 }
 
 .icon a {
