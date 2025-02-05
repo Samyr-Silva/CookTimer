@@ -10,6 +10,7 @@ function getQueryParam(param) {
 // Get time from URL (in seconds)
 let timeLeft = parseInt(getQueryParam("time"));
 
+const alarmSound = document.getElementById("alarmSound"); // Get the audio element
 const timerElement = document.getElementById("timer");
 
 // Countdown function
@@ -22,7 +23,8 @@ function startTimer() {
         setTimeout(startTimer, 1000);
     } else {
         timerElement.textContent = "Time's up!";
-        alert("Your eggs are ready!");
+        alarmSound.play(); // Play alarm sound
+        alert("Your eggs are ready!"); // Show alert
     }
 }
 
