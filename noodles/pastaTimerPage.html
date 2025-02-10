@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noodles Timer</title>
+    <script src="../support.js" defer></script>
     <link rel="stylesheet" href="../menu.css">
-    <script src="../support.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Egg Page</title>
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
             <h1>CookTimer <code>&lt;3</code></h1>
             <div class="shrink-close-icon">
                 <div class="box-shrink">
-                    <a href="../menuPage.html">
+                    <a href="pastaPage.html">
                         <img src="../assets/shirnk.png"/>
                     </a>
                 </div>
@@ -29,28 +29,13 @@
         </div>
   </header>
   <main>
+    <audio id="alarmSound" src="../assets/hand-bell.mp3" preload="auto"></audio>
     <div class="start-container">
-        <h3>What kind?</h3>
-        <div class="icons-container">
-            <div class="icon">
-                <a href="eggTimerPage.html?time=240">
-                    <img src="../assets/egg1.png"/>
-                    <p>Soft boiled</p>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="eggTimerPage.html?time=360">
-                    <img src="../assets/egg2.png"/>
-                    <p>Fried eggs</p>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="eggTimerPage.html?time=480">
-                    <img src="../assets/egg3.png"/>
-                    <p>Sunny side up</p>
-                </a>
-            </div>
-        </div>
+      <h2>Your pasta is ready in...</h2>
+      <div class="icon">
+            <img src="https://www.gifcen.com/wp-content/uploads/2021/07/ramen-gif-7.gif" alt="Pasta Timer">
+      </div>
+      <p id="timer">Loading...</p>
     </div>
   </main>
 </body>
